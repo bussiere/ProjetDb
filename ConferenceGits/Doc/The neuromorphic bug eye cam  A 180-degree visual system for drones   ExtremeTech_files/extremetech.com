@@ -1,0 +1,1 @@
+PARSELY.pInit({"apikey":"extremetech.com","customizations":null,"bundle":"/code/slim_v02.js","settings":{"debug":false,"widget":false,"tracker":true},"uuid":"C6232F99-1886-44C8-9181-CDEED4C355B3"});
