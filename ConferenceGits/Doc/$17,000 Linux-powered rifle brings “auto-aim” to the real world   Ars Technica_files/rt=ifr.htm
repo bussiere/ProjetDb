@@ -1,0 +1,28 @@
+
+<!-- saved from url=(0071)http://bcp.crwdcntrl.net/5/c=313/rand=594635269/pv=y/p=3565/dp=y/rt=ifr -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><style type="text/css"></style></head><body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background-color:transparent; width: 100%; text-align: center;">
+<div><script type="text/javascript">
+function afterFinished_1370() {
+	var response = getTargetingTags_1370();
+	var tokens = new Array();
+	tokens = response.split(';');
+	var intStr = '';
+	for(a in tokens) {
+		if (tokens[a].indexOf('#')>0 && tokens[a].indexOf(':')>0) {
+			val = tokens[a].substring(tokens[a].indexOf('#')+1, tokens[a].indexOf(':'));
+			intStr += 'int=' + val + '/';
+		} else if (tokens[a].indexOf(':')>0) {
+			val = tokens[a].substring(0, tokens[a].indexOf(':'));
+			intStr += 'int=' + val + '/';			
+		}
+	}
+        if (intStr != '') {
+		var img = new Image();
+		img.src= 'http://bcp.crwdcntrl.net/5/c=244/' + intStr;
+	}
+}
+</script>
+<script type="text/javascript">p39_mpu_1370 = 'http://arstechnica.com/gadgets/2013/01/17000-linux-powered-rifle-brings-auto-aim-to-the-real-world/';</script>
+<script id="peer39ScriptLoader" type="text/javascript" src="trg_1370.js"></script><script type="text/javascript" src="16330537081370"> </script><iframe src="px.htm" frameborder="0" height="0" width="0" scrolling="no"></iframe></div>
+
+</body></html>
