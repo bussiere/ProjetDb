@@ -1,0 +1,405 @@
+/*
+-----------------------------------------------------
+WN general styles for print media
+FileName:    wnPrint.css
+Version:     2002.10.09
+-----------------------------------------------------
+*/
+
+/* Elements */
+/* ----------------------------------------------------- */
+body {
+  margin:0;
+  padding:0;
+  background:#fff;
+  font:small/135% Times,Times New Roman,Serif;
+  voice-family: "\"}\""; voice-family:inherit;
+  font-size:medium;
+  }
+  html>body {font-size:medium;}
+p {
+  margin:0 0 1em 0;
+  }
+a img {
+  border-width:0;
+  border-style:none;
+  }
+form {
+  margin:0;
+  }
+dl, dl dd {
+  margin:0;
+  }
+
+/* Formatting Structure */
+/* ----------------------------------------------------- */
+#wrap {
+  width:98%;
+  }
+#colL, #colM, #colR, #foot {
+  margin:1em 0 0 165px;
+  }
+#colL .content, #colL .contentNeg, #colR .content {
+  font-size:85%;
+  line-height:130%;
+  }
+#colL .bot {
+  display:none;
+  }
+
+
+
+/* Links */
+/* ----------------------------------------------------- */
+a:link, a:visited, a:hover {
+  color:#039;
+  text-decoration:none;
+  }
+
+
+/* Header */
+/* ----------------------------------------------------- */
+#hdr, #hdrLeft {
+  position:relative;
+  background:transparent;
+  color:#000;
+  }
+#hdrLogo {
+  position:relative;
+  top:0;
+  margin-left:10px;
+  padding:1em 0;
+  }
+#hdrSch {
+  display:none;
+  }
+#hdrLogoSm {
+  position:relative;
+  margin:7pt 0 0 165px;
+  }
+
+
+
+/* Navigation */
+/* ----------------------------------------------------- */
+#nav {
+  position:relative;
+  margin-left:10px;
+  height:33px;
+  font-size:1px;
+  voice-family: "\"}\""; voice-family:inherit;
+  height:25px;
+  }
+  html>body #nav {height:25px;}
+#nav .textSize {
+  display:block;
+  position:absolute;
+  right:0;
+  margin-right:20px;
+  top:7px;
+  text-align:right;
+  width:130px;
+  voice-family: "\"}\""; voice-family:inherit;
+  width:122px;
+  }
+  html>body #nav .textSize {width:122px;}
+#nav .textSize a {width:18px;}
+
+
+/* Titles */
+/* ----------------------------------------------------- */
+h2 {
+  color:#f00;
+  font-size:100%;
+  border-bottom:1px dashed #000;
+  margin:.8em 0 .5em 0;
+  padding-bottom:5px;
+  }
+#colL h3, #colR h3 {
+  color:#f00;
+  text-transform:capitalize;
+  font-size:100%;
+  border-bottom:1px dashed #000;
+  margin:.8em 0 .4em 0;
+  padding-bottom:.4em;
+  }
+#sTitle {
+  position:relative;
+  padding-bottom:.8em;
+  border-top:.5pt dashed #fff;
+  border-bottom:.5pt dashed #999;
+  margin-bottom:.8em;
+  }
+#sTitle #sIcon {
+  position:absolute;
+  top:0;
+  }
+#sTitle #sIcon img {
+  display:block;
+  }
+#sTitle .timestamp {
+  padding-left:34px;
+  line-height:135%;
+  }
+.timestamp, #colM .section {
+  font-size:85%;
+  color:#f00;
+  }
+#sTitle .timestamp {
+  display:block;
+  padding-left:34px;
+  line-height:135%;
+  }
+
+
+
+/* Story Teasers */
+/* ----------------------------------------------------- */
+#mainStories .hd, #hoohaStories .hd {
+  font:bold 125% Arial,Sans-serif;
+  }
+#mainStories p.large {
+  margin:0 0 1em 0;
+  padding:0 0 .8em 0;
+  border-top:.5pt dashed #fff;
+  border-bottom:.5pt dashed #999;
+  }
+#mainStories p.large .hd {
+  font-size:185%;
+  line-height:115%;
+  }
+#mainStories p.large span {
+  font-weight:bold;
+  color:#666;
+  }
+#mainStories img {
+  position:relative;
+  top:2px;
+  }
+.sub {
+  color:#666;
+  text-decoration:none;
+  }
+#colM .sub {
+  font-size:85%;
+  color:#666;
+  }
+
+
+/* Story Page */
+/* ----------------------------------------------------- */
+.storyCap {
+  margin-bottom:.8em;
+  margin-top:1em;
+  }
+.pgTitle {
+  border:.5pt solid #999;
+  padding:.2em .4em;
+  }
+.pgTitle h1, .pgTitle h2 {
+  font:bold 140% Arial,Sans-serif;
+  color:#000;
+  margin:0;
+  line-height:normal;
+  border-width:0;
+  display:inline;
+  }
+.pgTitle h2 {
+  font-size:100%;
+  }
+.storyCap form {
+  display:inline;
+  white-space:nowrap;
+  margin:0;
+  padding:0;
+  }
+.pgTitle .secondary {
+  font-size:85%;
+  }
+.pgToolsL, #pgToolsBtns {
+  float:left;
+  position:relative;
+  margin:0;
+  }
+.pgToolsR, .pgToolsSolo {
+  display:none;
+  }
+.pgToolsSub {
+  padding:.4em;
+  border:.5pt solid #999;
+  border-top-width:0;
+  font-size:85%;
+  }
+.storyLoc {
+  font-size:85%;
+  }
+.storyThumbs {
+  margin-bottom:10px;
+  }
+
+
+/* Images */
+/* ----------------------------------------------------- */
+#photoWrap {
+  position:relative;
+  width:100%;
+  }
+.photoLarge {
+  float:left;
+  margin:0 .8em .8em 0;
+  }
+.thumbBack, .thumbNext, .negBG .clearR {
+  display:none;
+  }
+.storyThumbs img, .thumb img {
+  margin-bottom:.8em;
+  }
+
+#imgThumbs {
+  width:100%;
+  }
+#imgThumbs p {
+  font-size:85%;
+  line-height:135%;
+  text-align:center;
+  margin:0 .8em .8em 0;
+  padding:.4em;
+  overflow:hidden;
+  float:left;
+  width:160px;
+  height:210px;
+  voice-family: "\"}\""; voice-family:inherit;
+  width:140px;
+  height:190px;
+  }
+  html>body #imgThumbs p {width:140px; height:190px;}
+#colL #imgThumbs p {
+  font-size:100%;
+  float:left;
+  width:160px;
+  height:auto;
+  margin-right:0;
+  overflow:visible;
+  }
+#imgThumbs img {
+  display:block;
+  margin:0 auto;
+  }
+#imgThumbsCap p {
+  line-height:135%;
+  border-top:.5pt dotted #ccc;
+  padding:.4em 0;
+  min-height:145px;
+  voice-family: "\"}\""; voice-family:inherit;
+  min-height:135px;
+  }
+  html>body #imgThumbsCap p {min-height:135px;}
+#imgThumbsCap span.img {
+  float:left;
+  display:block;
+  margin:0 .8em .8em 0;
+  width:130px;
+  text-align:center;
+  }
+#imgThumbsCap img {
+  margin:0 auto;
+  }
+#imgThumbs .icon, #imgThumbsCap img.icon {
+  display:inline;
+  float:none;
+  margin:0;
+  }
+
+  
+/* Misc Content */
+/* ----------------------------------------------------- */
+#recent {margin-bottom:1em;}
+#recent a, .genStoryList a, .hooha dt a, .mktData a {font-weight:bold;}
+#inb, #inbOld, #hooha, .announce, #genStoryList, #storyInsert, .genStoryList, .pgNav, #getquote, .genBlock {display:none;}
+#colL p, #colLstory p, #colR p {
+  padding-bottom:.4em;
+  margin:0;
+  }
+.hooha h4 {
+  margin:.4em 0 0 0;
+  font-size:100%;
+  }
+.hooha h4 img {display:none;}
+.stroked {
+  margin:0;
+  padding:0;
+  border-width:0;
+  }
+.subgroup {padding-bottom:.5em;}
+.ra {font-weight:bold;}
+
+
+/* Tables */
+/* ----------------------------------------------------- */
+th, td {
+  border-bottom:.5pt solid #ccc;
+  padding:3px 2px;
+  }
+th {
+  text-align:left;
+  vertical-align:top;
+  }
+
+
+/* Financial Data */
+/* ----------------------------------------------------- */
+#colL .quotebox, #colR .quotebox, .storyTxt .smaller, #getQuote {display:none;}
+#colL .mktData {border-color:#999;}
+#colL .mktPos {color:#396;}
+.mkt th, .mkt td {padding-left:5px; padding-right:5px;}
+.mkt .chart span {
+  float:left;
+  display:block;
+  white-space:nowrap;
+  width:470px
+  }
+.mkt .chart img {
+  margin:0 1em 1em 0;
+  }
+
+
+/* Ads */
+/* ----------------------------------------------------- */
+.adSky, .ad468, .ad728, .ad728black, .adMsg, .genAdBlock, .adTxtBox, .imgSponsor {display:none;}
+#footAd {display:none;}
+  
+/* Generic */
+/* ----------------------------------------------------- */
+.none, .standardsNote, .skiplinks {display:none;}
+.nowrap {white-space:nowrap;}
+.clear {clear:both;}
+.clearR {clear:right;}
+.rule {display:block; border-width:0; border-style:none; border-bottom:1px dashed #999; height:1px; margin-top:5px;}
+.buffer {font-size:0; height:0; width:0;}
+.imgLeft {float:left; margin:0 .8em .4em 0;}
+.imgRight {float:right; margin:0 0 .4em .8em;}
+
+  
+/* Footer */
+/* ----------------------------------------------------- */
+#foot {
+  margin-bottom:1.5em;
+  font:x-small Verdana,Sans-serif;
+  voice-family: "\"}\""; voice-family:inherit;
+  font-size:small;
+  }
+  html>body #foot {font-size:small;}
+#foot .content {
+  border-top:.5pt solid #000; 
+  font-size:85%;
+  line-height:140%;
+  padding-top:0;
+  }
+#foot div {
+  padding-top:.4em;
+  }
+#foot a:link, #foot a:visited {
+  white-space:nowrap;
+  color:#000;
+  }
+

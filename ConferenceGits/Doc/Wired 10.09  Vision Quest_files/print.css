@@ -1,0 +1,204 @@
+* { margin: 0; padding: 0;}
+
+/* Items to exclude from printing */
+#timestamp, #nav_bar, .rss, #xrail, #foot_row1, #foot_row2, #foot_row3 #sis_sites, #foot_row3 form, .social, #section, #ad_bottom,.timestamp, .matchbook_rain, .matchbook_rain_light, .date_time .img_middle, #footer #left_col, #footer #right_col, .no_print, #article_footer #see_also, #article_footer #right_col, #footer  { display:none; }
+
+
+
+html { width: auto; height:auto; margin-bottom: 20px; }
+
+body {  width: 100%; height:auto; font-size: 11pt; background: #fff; color: #000; text-align:left; margin-bottom: 10px; }
+
+#print { width: 728px; margin: 0 auto; }
+
+#shell, body > #shell, #content, #header {  }
+
+
+
+
+a img { border: none; }
+
+#contentwell { width: auto; height:auto; float:none; display: inline; }
+
+#contentwell h1 { float:none; }
+
+#author_left {
+
+}
+
+/* print */
+
+/* primary packages */
+
+
+a {
+    text-decoration: none;
+    color: #19B;
+}
+
+img a, img {
+    border: none;
+}
+
+/* main content */
+
+#goback:hover {
+    cursor: pointer;
+}
+
+#goback {
+    font-size: .9em;
+    font-weight: normal;
+    margin: 10px 0 0 0;
+}
+
+#goback .small {
+    display: block;
+    float: left;
+    margin: 3px 4px 0 0;
+    font-size: .7em;
+}
+
+#articletext img,
+#articletext .pic_wrapper {
+    display: block;
+    float: left;
+}
+
+#logo {
+    clear: both;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+#header #leaderboard {
+    position: relative;
+    left: 0;
+    /*top: 67px;
+    height: auto;*/
+}
+
+.headline {
+    display: block;
+    margin: 5px 0 0 0;
+    font:  bold 1em georgia ,"times new roman", serif;
+}
+
+.headline h1 {
+    font-size: 2.7em;
+    margin-bottom: 5px;
+    line-height: 1.2em;
+}
+
+#dartTarget_sz728x90 {
+    height: 10px;
+}
+
+#dartFrame_sz728x90 {
+    display: none;
+}
+
+#print #contributor {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+#print div.date_time {
+    font: normal .9em georgia, "times new roman", serif;
+    margin-bottom: 10px;
+}
+
+#article h2 {
+    font: normal 1.4em arial, helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+#matchbook_plus {
+    background: transparent url("/images/plus_tile.gif") repeat-x 0 0;
+    clear: both;
+    width: 728px;    
+    height: 17px;
+    margin-bottom: 10px;
+
+}
+
+/* somewhere after here */
+
+#article_body h1 {
+    margin-bottom: 5px;
+}
+
+#print #article_body p,
+#print #corrections {
+    font: normal georgia, "times new roman", serif;
+    margin-bottom: 10px; 
+}
+
+#article #article_body .left_rail{
+    float: left;
+    width: 250px;
+    padding: 0 20px 0 0;
+    clear: left;
+    font-size: .95em;
+}
+
+#article #article_body .left_rail .title{
+    text-transform: uppercase;
+    font: .8em "arial black", helvetica, sans-serif;
+    color: #666;
+    padding: 0 0 10px 0;
+}
+
+#article #article_body .left_rail .subtitle{
+    text-transform: uppercase;
+    font: bold .9em arial, helvetica, sans-serif;
+    color: #000;
+}
+
+#article #article_body .left_rail .wrapper{
+    padding: 0 0 0 0;
+    clear: both;
+}
+
+#article #article_body .left_rail img{
+    float: left;
+    width: 60px;
+    height: 60px;
+    padding: 0 10px 10px 0;
+}
+
+/* before here */
+#print #article_body p strong.st_head{
+    display: block;
+    font-weight: bold;
+}
+
+#article_body .pic_wrapper {
+    float: left;
+    clear: left;
+    margin: 0 10px 10px 0;
+}
+
+#print #article_body .caption {
+    font: normal 1em arial, helvetica, sans-serif;
+    color: #fff;
+    background: #000;
+    padding: 5px;
+}
+
+#pic_wrapper1 {
+    width: 200px;
+}
+
+#pic_wrapper2 {
+    width: 250px;
+}
+
+#print #corrections {
+    margin-top: 15px;
+}
+
+#print #corrections em {
+    display: block;
+    font-weight: bold;
+}

@@ -1,0 +1,13 @@
+/*
+-----------------------------------------------------
+WN general styles for aural/braille/embossed media
+FileName:    wnOther.css
+Version:     2002.09.16
+-----------------------------------------------------
+*/
+
+.standardsNote {
+  display:none;
+  speak:none;
+  }
+

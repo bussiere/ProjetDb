@@ -1,0 +1,49 @@
+/*
+
+-----------------------------------------------------
+
+WN master CSS file for screen media
+
+FileName:    wmScreen.css
+
+Version:     2004.05.20
+
+-----------------------------------------------------
+
+*/
+
+
+
+@import url("wmScreenBase.css");
+
+@import url("wmColor.css");
+
+
+
+a img {
+
+  border-width:0;
+
+  border-style:none;
+
+  border-color:#fff;
+
+  color:#fff;
+
+  }
+
+.skiplinks, .textSize {
+
+  display:none;
+
+  }
+
+h1.no {
+
+  font-size:2em;
+
+  font-weight:normal;
+  
+  line-height:1.5em;
+
+}
