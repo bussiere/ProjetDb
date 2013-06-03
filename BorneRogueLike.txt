@@ -1,1 +1,20 @@
 Faire une borne roguelike en txt.
+
+1°) Définir les besoins en matériel 
+  UC (Proc/Mem/HDD)
+  SC (Size/Wide)
+   Un raspberry pie 32 euros avec carte sd 8 euros et Chargeur electrique 10 euros
+   
+   Logiciel :
+   NitroHack :
+   http://www.raspberrypi.org/phpBB3/viewtopic.php?f=35&t=13275
+   
+   
+  
+  
+2°) Définir fonctionnement/utilisation
+
+Visiblement on peut y jouer en reseau, donc on met un ecran et un clavier et on rajoute un wifi pour garder les scores ? (+ 10 euros).
+
+
+
