@@ -1,0 +1,57 @@
+/**
+* Rainbow Color Schemes for Arthemia Premium
+*/
+/* Global Element */
+body {
+  background: #505050;
+}
+.container {
+  background: #ffffff;
+}
+.div-gap {
+  margin: 0 5px;
+}
+/* Navigation bar */
+#navbar-wrapper {
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+/* Headline & Featured Block */
+#top {
+  background: #dedede;
+}
+#headline {
+  color: #fff;
+  background: #333333;
+}
+#headline a {
+  color: #a0a0a0;
+}
+#headline .meta {
+  color: #ececec;
+}
+/* Category Block */
+#middle {
+  background: #ffffff;
+}
+/* Main Content */
+#page {
+  background: #eeeeee url(../images/diag_stripe.gif);
+}
+/* Sidebar */
+#sidebar h3 {
+  color: #fff;
+  background: #303030;
+}
+.spoiler h3 a {
+  color: #ffffff;
+}
+/* Gallery & Footer */
+#gallery, #footer {
+  background: #dedede;
+}
+/* Popular Posts */
+#front-popular {
+  background: #303030;
+}

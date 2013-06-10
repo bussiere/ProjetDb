@@ -1,0 +1,99 @@
+
+/* CoLabs - Tabs */
+#tabs ul.colabsTabs{
+    margin: 0 0 10px;
+    }
+#tabs ul.colabsTabs li{
+    display: inline-block;
+    border-color: transparent;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    padding: 0;
+    }
+#tabs ul.colabsTabs li a{
+    display: inline-block;background: #333;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 14px;
+    }
+#tabs ul.colabsTabs li a:hover, #tabs ul.colabsTabs li a:active, #tabs ul.colabsTabs li a.selected{
+    background: #ECECEC;
+    color: #000;
+    text-decoration: none;
+    }
+#tabs .box li {
+    margin-bottom: 10px;
+    line-height: 1.3em;
+    }
+#tabs .box li:last-child {
+    margin-bottom: 0;
+    }
+#tabs .box li .meta {
+    display: block;
+    }
+#tabs li{
+    background: none;
+    padding: 0 5px 10px;
+    width: auto;
+    }
+#tabs .colabs-image, #tabs .photo {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    float: left;
+    margin-right: 10px;
+    padding: 2px;
+    }
+#tabs ul.list li img{
+    vertical-align: baseline;
+    }
+#tabs .meta {
+    font-size: 1em;
+    }
+
+/* CoLabs - Flickr */
+#sidebar .flickr ul {
+    margin: 10px 0 0;
+    padding: 0 0 0 12px;
+}
+#sidebar .flickr img {
+    width: 75px;
+    height: 75px;
+    -webkit-transition: .25s;
+}
+#sidebar .flickr a:hover img{
+    -webkit-box-shadow: 0px 0px 8px #888;
+    -moz-box-shadow: 0px 0px 8px #888;
+    box-shadow: 0px 0px 8px #888;
+}
+#sidebar .flickr a{
+    display: block
+}
+#sidebar .flickr li {
+    background: none repeat scroll 0 0 transparent;
+    float: left;
+    margin: 0 12px 10px 0;
+    padding: 0;
+    width: auto;
+    border-bottom: none;
+}
+
+/*  Misc
+**  CoLabs - Author  */
+#sidebar .flickr img, #sidebar .the_author img {
+    background: #fff;
+    border: 1px solid #DDD;
+    padding: 2px;
+    float:left;      
+    }
+#sidebar .the_author img {
+    margin: 10px 10px 0 0;
+    }
+/* CoLabs - Video */
+.widget-video-unit h4{
+    margin: 5px 0;
+    text-align: center;    
+    }
+.widget-video-list{
+    margin: 5px 0;
+    }

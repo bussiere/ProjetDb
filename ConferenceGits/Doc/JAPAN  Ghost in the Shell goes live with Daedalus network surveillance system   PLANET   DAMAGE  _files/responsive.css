@@ -1,0 +1,178 @@
+.left {
+  float: left;
+  display: inline;
+}
+.right {
+  float: right;
+  display: inline;
+}
+/* #Responsive For tablet
+================================================== */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* Headline */
+  #headline {
+    width: 54.6%;
+  }
+  #featured {
+    width: 39%;
+  }
+  /* Sidebar */
+  #sidebar-left, #sidebar-right {
+    width: 100%;
+  }
+  /* Widget */
+  #tabs ul.colabsTabs li a {
+    padding: 5px !important;
+  }
+}
+/*  #Responsive Mobile (Portrait)
+================================================== */
+@media only screen and (max-width: 767px) {
+  /* Change Element Width */
+  #logo,
+  #head .right,
+  .wrapper,
+  #sidebar,
+  .tanbox,
+  #front-popular .clearfloat,
+  #sidebar-left,
+  #sidebar-right,
+  #gallery #random,
+  #gallery #video {
+    width: 100%;
+  }
+  #front-list, #paged-list, #content {
+    width: 96%;
+  }
+  /* Header */
+  #logo {
+    text-align: center;
+    display: inline-block;
+  }
+  #head .right {
+    margin: 10px 0 0;
+  }
+  /* Navbar */
+  #navbar ul {
+    display: none;
+  }
+  #navbar select {
+    display: block;
+  }
+  #searchform {
+    display: block;
+    float: none;
+    margin: 10px 0;
+  }
+  #searchform .field {
+    padding: 5px;
+    width: 89%;
+  }
+  /* Headline */
+  #headline {
+    width: 96%;
+  }
+  #headline .thumb {
+    width: 25%;
+    margin-right: 5%;
+  }
+  #featured {
+    display: none;
+  }
+  #single_head {
+    background: none;
+    width: 30%;
+  }
+  #single_desc {
+    width: 62.1%;
+  }
+  /* Category Bar */
+  .categorybar {
+    width: 97.8%;
+    padding: 2% 1.1%;
+  }
+  /* Tanbox */
+  #paged-list .clearfloat {
+    border: none;
+  }
+  #paged-list .tanbox {
+    border-bottom: 1px dotted #bbbbbb;
+  }
+  /* Post */
+  #stats .right {
+    float: left;
+    clear: left;
+  }
+  /* Gallery */
+  #gallery {
+    padding: 1.6% 2%;
+  }
+  #random-wrapper span {
+    width: 13%;
+    margin-right: 3.6%;
+  }
+  #gallery #video, #front-popular .clearfloat {
+    padding: 0;
+    border: none;
+  }
+  #front-popular .clearfloat {
+    margin-bottom: 15px;
+  }
+  /* Widget */
+  .adspace-widget {
+    text-align: center;
+  }
+  /* Tab Widget */
+  #tabs ul.colabsTabs {
+    overflow: hidden;
+  }
+  #tabs ul.colabsTabs li {
+    width: 49%;
+    float: left;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  #tabs ul.colabsTabs li a {
+    padding: 5px 0 !important;
+    width: 100%;
+  }
+  /* Footer */
+  #footer-left, #footer-right {
+    padding: 5px 0;
+    float: left;
+    display: inline;
+    display: block;
+  }
+  #footer-right {
+    clear: left;
+  }
+}
+/* #Responsive For Mobile(Landscape)
+================================================== */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* Category Bar */
+  .categorybar {
+    width: 31%;
+  }
+  .categorybar:nth-child(1n+4) {
+    width: 47.8%;
+  }
+  /* Gallery */
+  #gallery #video {
+    width: 45.4%;
+  }
+  #gallery #random {
+    width: 50.2%;
+  }
+  #random-wrapper span {
+    width: 22%;
+    margin-right: 3%;
+  }
+  /* Tabs Widget */
+  #tabs ul.colabsTabs li {
+    width: 23.9%;
+    text-align: center;
+  }
+}

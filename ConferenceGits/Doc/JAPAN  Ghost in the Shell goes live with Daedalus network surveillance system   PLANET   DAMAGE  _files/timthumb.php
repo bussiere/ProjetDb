@@ -1,0 +1,1 @@
+<h1>A TimThumb error has occured</h1>The following error(s) occured:<br /><ul><li>Could not find the internal image you specified.</li></ul><br /><br />Query String : src=wp-content/uploads/2009/12/bootspromo.jpg&amp;w=80&amp;h=80&amp;zc=1&amp;q=90<br />TimThumb version : 2.8.11</pre>

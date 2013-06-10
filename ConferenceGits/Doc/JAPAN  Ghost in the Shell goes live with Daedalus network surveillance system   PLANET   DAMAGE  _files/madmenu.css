@@ -1,0 +1,187 @@
+#madmenu { 
+	float:left; 
+	padding: 0;
+	margin: 0;
+	clear:both;
+	width:100%;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:10px;
+	}
+
+#madmenu ul {
+	float:left; 
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+    z-index: 99999 !important;
+	}
+
+#madmenu li { 
+	float: left;
+	margin: 0;
+	padding:0;
+	border-right:1px solid #303030;
+	}
+
+#madmenu li:hover {
+	background: #5b5b5b;
+	}
+
+#madmenu li a, #madmenu li a:visited { 
+	margin:0;
+	padding:7px 14px;
+	color:#eeeeee;
+	display:block;
+	}
+
+#madmenu li li { 
+	float: none;
+	margin: 0;
+	padding:0;
+	border-right:0px solid #303030;
+	}
+
+#madmenu li ul {
+	display:none;
+	position: absolute;
+	width: 154px;
+	padding:0;
+	text-transform: none;
+}
+
+#madmenu li ul ul { 
+	margin-left: 154px;
+	left: 0;
+  z-index: 9991 !important;
+}
+
+#madmenu li:hover ul, #madmenu li li:hover ul, #madmenu li li li:hover ul, #madmenu li.sfhover ul, #madmenu li li.sfhover ul, #madmenu li li li.sfhover ul { 
+	/*display:block;
+	left: auto;*/
+	z-index:9999 !important;
+	}
+
+
+#madmenu a, #madmenu a:visited, #madmenu a:link {
+	display: block;
+	text-decoration:none;
+	padding:7px 14px;
+	margin:0;
+	color: #ffffff;
+	position:relative
+}
+
+#madmenu a:hover, #madmenu a:active {
+    background: #5b5b5b;
+	color:#fff;
+	}
+
+#madmenu li li a, #madmenu li li a:link, #madmenu li li a:visited {
+	color:#fff;
+	/*background: #5b5b5b url(images/dots_nav.gif) repeat-x top;*/
+	background: #5b5b5b;
+	padding:7px 14px;
+	float: none;
+	margin: 0;
+	}
+
+#madmenu li li a:hover, #madmenu li li a:active {
+	background: #909090;
+	color:#fff;
+	}
+
+#madmenu li li li a {
+	padding:5px 14px;
+	background: #909090;
+	}
+
+#madmenu li li li a:hover {
+	color: #fff;
+	}
+
+#madmenu li li li a:active {
+	color: #fff;
+	background: #909090;
+}
+
+
+/* Configuration of menu width */
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			10em; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			24px; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+
+/* autoArrows CSS */
+.sf-sub-indicator {
+	background:url(../images/arrows-white.png) no-repeat 0 0;
+	display:block;
+	font-size:1px;
+	height:7px;
+	overflow:hidden;
+	position:absolute;
+	right:8px;
+	top:10px;
+	width:7px
+}
+ul ul span.sf-sub-indicator{background-position:0 100%;right:10px;top:8px}
+.sf-with-ul {
+	padding-right:25px !important
+}
+
+@media (max-width: 977px) {
+	.sf-sub-indicator {
+		background: none;
+	}
+	.nav-collapse ul, #madmenu ul li {
+		border: 0 !important;
+	}
+}

@@ -1,0 +1,123 @@
+/* These styles apply to all feeds */
+.youtubeFeeder {
+	margin: 10px 0;
+	text-align: center;
+}
+
+.youtubeDatebeforetitle {
+	font-weight: normal;
+}
+
+.youtubeDatebeforetitle:after {
+	content: " - ";
+}
+
+.youtubeDateaftertitle {
+	font-weight: normal;
+}
+
+.youtubeDateaftertitle:before {
+	content: " - ";
+}
+
+.youtubeVideo {
+	border: 0 !important;
+}
+
+.youtubeTitle {
+	font-weight: bold;
+}
+
+.youtubeContent {
+	margin-bottom: 20px;
+}
+
+.youtubeDatebeforevideo {
+	display: block;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.youtubeThumb {
+}
+
+
+/* These styles apply only to the "list" style */
+.youtubeFeederlist .youtubeTitle {
+	font-size: 1.6em;
+	margin: 3px;
+}
+
+
+/* These styles apply only to the "playlist" style */
+
+.youtubeFeederplaylist {
+	background: #f3f3f3;
+	padding: 10px;
+	/*float: left;*/
+	border: 1px solid #e3e3e3;
+	margin-bottom:15px;
+}
+
+.youtubeFeederplaylist .youtubeVideo {
+	float: left;
+	margin-right:10px;
+}
+
+.youtubeFeederPlaylistList {
+	float: left;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 220px;
+}
+
+.youtubeFeederPlaylistList li {
+	list-style-type: none;
+	display:block;
+	background: #f1f1f1;
+	float: left;
+	width: 216px;
+	border: 1px solid #dddddd;
+	margin: 0 !important;
+	padding:3px !important;
+	text-align: left !important;
+}
+
+.youtubeFeederPlaylistList li:hover {
+	border-color: #cccccc;
+}
+
+.youtubeFeederPlaylistList li img {
+	float: left;
+	margin-right: 5px;
+	border: 1px solid #999;
+}
+
+.youtubeFeederPlaylistList li a {
+	font-family: Arial;
+	text-decoration: none;
+	display: block;
+	color: #000;
+}
+
+.currentvideo {
+	background: #e6e6e6 !important;
+}
+
+table.yfSettings {
+	border-collapse: collapse;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+}
+
+table.yfSettings tr:nth-child(2n+1) {
+	background: #e5e5e5;
+}
+
+table.yfSettings td {
+	padding: 4px 2px;
+}
+
+table.yfSettings tr td:nth-child(1) {
+	font-weight: bold;
+}

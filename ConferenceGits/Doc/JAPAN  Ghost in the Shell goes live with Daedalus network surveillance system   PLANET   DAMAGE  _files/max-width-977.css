@@ -1,0 +1,78 @@
+
+/* Set Mobile menu style for tablet and below
+------------------------------------------------------------------- */
+@media (max-width: 977px) {
+  .container {
+    overflow-x: hidden;
+  }
+  .menu-select {
+    text-align: center;
+  }
+  .nav-collapse {
+    clear: both;
+  }
+  .nav-collapse ul, #madmenu ul li {
+    float: none !important;
+    display: block !important;
+  }
+  .nav-collapse.collapse > div {
+    margin-bottom: 20px;
+  }
+  .nav-collapse, .nav-collapse.collapse {
+    height: 0;
+    overflow: hidden;
+  }
+  .btn-navbar {
+    display: block;
+  }
+
+  /* Sub Menu
+  ----------------------------------------------------------------- */
+  .nav-collapse ul ul, #madmenu li ul ul {
+    height: auto !important;
+    display: block !important;
+    visibility: visible !important;
+    position: static;
+    border: none;
+    background: none;
+    margin: 0 0 0 20px !important;
+    width: auto;
+    float: none;
+    width: auto !important;
+    opacity: 1 !important;
+    position: static !important;
+    background: none !important;
+  }
+  #madmenu li {
+    border: none;
+  }
+  #madmenu ul ul {
+    margin-left: 20px;
+  }
+  .nav-collapse ul ul li {
+    border: none;
+    width: auto;
+  }
+
+  /* Search Box
+  ----------------------------------------------------------------- */
+  #searchform {
+    display: block;
+    float: none;
+    margin: 10px 0;
+  }
+  #searchform input[type="text"] {
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #searchform input[type="image"] {
+    display: none
+  }
+  #madmenu li a, #madmenu li a:hover{
+  background:none !important;
+  } 
+}
