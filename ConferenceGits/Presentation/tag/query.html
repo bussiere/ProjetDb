@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>Documentation diverses - Query</title>
+        <link rel="stylesheet" href="http://bussiere.github.com/Documentation/theme/css/main.css">
+                <link href="http://bussiere.github.com/Documentation/feeds\all.atom.xml" type="application/atom+xml" rel="alternate" title="Documentation diverses Atom Feed" />
+                
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://bussiere.github.com/Documentation/">Documentation diverses </a></h1>
+                <nav><ul>
+                                                                                    <li ><a href="http://bussiere.github.com/Documentation/category/blog.html">Blog</a></li>
+                                    <li ><a href="http://bussiere.github.com/Documentation/category/geek.html">Geek</a></li>
+                                                </ul></nav>
+        </header><!-- /#banner -->
+                
+            
+
+                            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="http://bussiere.github.com/Documentation/les-query-en-django.html">Les Query en django</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2012-12-19T00:00:00">
+                mer. 19 décembre 2012
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="http://bussiere.github.com/Documentation/author/bussiere.html">Bussiere</a>
+        </address>
+        <p>In <a href="http://bussiere.github.com/Documentation/category/geek.html">Geek</a>. </p>
+<p>tags: <a href="http://bussiere.github.com/Documentation/tag/django.html">Django</a><a href="http://bussiere.github.com/Documentation/tag/query.html">Query</a><a href="http://bussiere.github.com/Documentation/tag/sql.html">Sql</a></p>
+</footer><!-- /.post-info --><p>Pour ceux qui ne sont pas au courant, Django c'est le bien.</p>
+<p>Sauf que je galere tout le temps avec les query, du coup cet article va me servir de pense bete a moi aussi et de tutorial pour vous.
+Je m'appui</p>
+<p>Donc :</p>
+<p>Recuperer tout les objets d'un type :
+all_entries = Entry.objects.all()</p>
+<p>Mettre un filtre precis sur un objet :
+(ici le = signifie exactement)
+Entry.objects.filter(pub_date__year=2006)</p>
+<p>Tout les objets ne correspondant pas a une requete :
+(ici le = signifie exactement)
+Entry.objects.exclude(pub_date__year=2006)</p>
+<p>Pour des questions de lisibilité il vaut mieux enchainer les query :</p>
+<p>q1 = Entry.objects.filter(headline__startswith="What")
+q2 = q1.exclude(pub_date__gte=datetime.date.today())
+q3 = q1.filter(pub_date__gte=datetime.date.today())
+q4 = q2.filter(pub_date__year=2006)</p>
+<p>Pour obtenir un objet precis :
+one_entry = Entry.objects.get(pk=1)</p>
+<p>Par contre attention la requete leve une erreur si cette requete ne renvois rien.</p>
+<p>Si vous n'etes pas sur il vaut mieux utiliser :
+Ceci renverra null ou quelquechose si elle existe et pas d'erreur
+Entry.objects.filter(pk__exact=1)</p>
+<p>Des recherches qui contiennent un bout de texte (like en sql) :</p>
+<h1>toute les annees 2000 (qui contiennent 20 donc)</h1>
+<h1>mais peut ramener 1920</h1>
+<p>Entry.objects.filter(pub_date__year__contains='20')</p>
+<h1>ne ramene que les annees spot 2000 (inclus) :</h1>
+<p>Entry.objects.filter(pub_date__year__startswith='20')</p>
+<p>Requete particuliere et multiple :</p>
+<h1>Ramene les entrees avec les  id 1, 4 et 7</h1>
+<p>Entry.objects.filter(pk__in=[1,4,7])</p>
+<h1>Ramene les entrees avec  id &gt; 14</h1>
+<p>Entry.objects.filter(pk__gt=14)</p>
+<p>Requete avec des relations :
+Blog.objects.filter(entry__authors__name='Lennon')</p>
+<p>Source :
+https://docs.djangoproject.com/en/dev/topics/db/queries/</p>                </article>
+                                    <p class="paginator">
+        Page 1 / 1
+    </p>
+                            </aside><!-- /#featured -->
+                                                </ol><!-- /#posts-list -->
+                        </section><!-- /#content -->
+                    <section id="extras" class="body">
+                        <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                                                    <li><a href="http://docs.notmyidea.org/alexis/pelican/">Pelican</a></li>
+                                                    <li><a href="http://python.org">Python.org</a></li>
+                                                    <li><a href="http://jinja.pocoo.org">Jinja2</a></li>
+                                                </ul>
+                </div><!-- /.blogroll -->
+                                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://bussiere.github.com/Documentation/feeds\all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+                                                    <li><a href="https://github.com/bussiere">Bussiere</a></li>
+                                                </ul>
+                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Documentation diverses</title><link href="http://bussiere.github.com/Documentation/" rel="alternate"></link><link href="http://bussiere.github.com/Documentation/feeds%5Cgeek.atom.xml" rel="self"></link><id>http://bussiere.github.com/Documentation/</id><updated>2013-06-13T00:00:00+02:00</updated><entry><title>Wifi et Ubuntu / Unix</title><link href="http://bussiere.github.com/Documentation/wifi-et-ubuntu-unix.html" rel="alternate"></link><updated>2013-06-13T00:00:00+02:00</updated><author><name>Bussiere</name></author><id>tag:bussiere.github.com/Documentation,2013-06-13:wifi-et-ubuntu-unix.html</id><summary type="html">&lt;p&gt;Pour scanner les reseaux wifi aux alentours.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;iwlist&lt;/span&gt; &lt;span class="n"&gt;wlan0&lt;/span&gt; &lt;span class="n"&gt;scan&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ou encore :&lt;/p&gt;
+&lt;p&gt;iwlist wlan0 scanning&lt;/p&gt;</summary><category term="wifi"></category><category term="unix"></category><category term="ubuntu"></category><category term="linux;scan;scanning"></category></entry><entry><title>Git</title><link href="http://bussiere.github.com/Documentation/git.html" rel="alternate"></link><updated>2013-05-30T00:00:00+02:00</updated><author><name>Bussiere</name></author><id>tag:bussiere.github.com/Documentation,2013-05-30:git.html</id><summary type="html">&lt;p&gt;Quelques commandes utiles pour git :&lt;/p&gt;
+&lt;p&gt;Pusher directement les pages :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;gh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;pages&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="github"></category><category term="git"></category></entry><entry><title>Zfs</title><link href="http://bussiere.github.com/Documentation/zfs.html" rel="alternate"></link><updated>2013-05-29T00:00:00+02:00</updated><author><name>Bussiere</name></author><id>tag:bussiere.github.com/Documentation,2013-05-29:zfs.html</id><summary type="html">&lt;p&gt;Quelques commandes utiles pour zfs :&lt;/p&gt;
+&lt;p&gt;Revenir en arriere :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;zfs&lt;/span&gt; &lt;span class="n"&gt;rollback&lt;/span&gt; &lt;span class="n"&gt;tank&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ahrens&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;tuesday&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Envoyer et recevoir une image :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# zfs send tank/gozer@0830 &amp;gt; /bkups/gozer.083006&lt;/span&gt;
+&lt;span class="c"&gt;# zfs receive tank/gozer2@today &amp;lt; /bkups/gozer.083006&lt;/span&gt;
+&lt;span class="c"&gt;# zfs rename tank/gozer tank/gozer.old&lt;/span&gt;
+&lt;span class="c"&gt;# zfs rename tank/gozer2 tank/gozer&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="zfs"></category><category term="unix"></category><category term="ubuntu"></category><category term="linux"></category></entry><entry><title>Petite Puterie en java</title><link href="http://bussiere.github.com/Documentation/petite-puterie-en-java.html" rel="alternate"></link><updated>2012-12-28T00:00:00+01:00</updated><author><name>Bussiere</name></author><id>tag:bussiere.github.com/Documentation,2012-12-28:petite-puterie-en-java.html</id><summary type="html">&lt;p&gt;Suite a ce &lt;a href="http://sametmax.com/loperateur-not-bitwise-ou-tilde-en-javascript/" title="Tres bon blog"&gt;post&lt;/a&gt; sur le site de &lt;a href="http://sametmax.com" title="Tres bon site"&gt;sam et max&lt;/a&gt;, j'ai eu l'idée d'une petite puterie en java.&lt;/p&gt;
+&lt;p&gt;Je vous la livre :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="geek"></category><category term="java"></category><category term="prog"></category></entry><entry><title>Les Query en django</title><link href="http://bussiere.github.com/Documentation/les-query-en-django.html" rel="alternate"></link><updated>2012-12-19T00:00:00+01:00</updated><author><name>Bussiere</name></author><id>tag:bussiere.github.com/Documentation,2012-12-19:les-query-en-django.html</id><summary type="html">&lt;p&gt;Pour ceux qui ne sont pas au courant, Django c'est le bien.&lt;/p&gt;
+&lt;p&gt;Sauf que je galere tout le temps avec les query, du coup cet article va me servir de pense bete a moi aussi et de tutorial pour vous.
+Je m'appui&lt;/p&gt;
+&lt;p&gt;Donc :&lt;/p&gt;
+&lt;p&gt;Recuperer tout les objets d'un type :
+all_entries = Entry.objects.all()&lt;/p&gt;
+&lt;p&gt;Mettre un filtre precis sur un objet :
+(ici le = signifie exactement)
+Entry.objects.filter(pub_date__year=2006)&lt;/p&gt;
+&lt;p&gt;Tout les objets ne correspondant pas a une requete :
+(ici le = signifie exactement)
+Entry.objects.exclude(pub_date__year=2006)&lt;/p&gt;
+&lt;p&gt;Pour des questions de lisibilité il vaut mieux enchainer les query :&lt;/p&gt;
+&lt;p&gt;q1 = Entry.objects.filter(headline__startswith="What")
+q2 = q1.exclude(pub_date__gte=datetime.date.today())
+q3 = q1.filter(pub_date__gte=datetime.date.today())
+q4 = q2.filter(pub_date__year=2006)&lt;/p&gt;
+&lt;p&gt;Pour obtenir un objet precis :
+one_entry = Entry.objects.get(pk=1)&lt;/p&gt;
+&lt;p&gt;Par contre attention la requete leve une erreur si cette requete ne renvois rien.&lt;/p&gt;
+&lt;p&gt;Si vous n'etes pas sur il vaut mieux utiliser :
+Ceci renverra null ou quelquechose si elle existe et pas d'erreur
+Entry.objects.filter(pk__exact=1)&lt;/p&gt;
+&lt;p&gt;Des recherches qui contiennent un bout de texte (like en sql) :&lt;/p&gt;
+&lt;h1&gt;toute les annees 2000 (qui contiennent 20 donc)&lt;/h1&gt;
+&lt;h1&gt;mais peut ramener 1920&lt;/h1&gt;
+&lt;p&gt;Entry.objects.filter(pub_date__year__contains='20')&lt;/p&gt;
+&lt;h1&gt;ne ramene que les annees spot 2000 (inclus) :&lt;/h1&gt;
+&lt;p&gt;Entry.objects.filter(pub_date__year__startswith='20')&lt;/p&gt;
+&lt;p&gt;Requete particuliere et multiple :&lt;/p&gt;
+&lt;h1&gt;Ramene les entrees avec les  id 1, 4 et 7&lt;/h1&gt;
+&lt;p&gt;Entry.objects.filter(pk__in=[1,4,7])&lt;/p&gt;
+&lt;h1&gt;Ramene les entrees avec  id &amp;gt; 14&lt;/h1&gt;
+&lt;p&gt;Entry.objects.filter(pk__gt=14)&lt;/p&gt;
+&lt;p&gt;Requete avec des relations :
+Blog.objects.filter(entry__authors__name='Lennon')&lt;/p&gt;
+&lt;p&gt;Source :
+https://docs.djangoproject.com/en/dev/topics/db/queries/&lt;/p&gt;</summary><category term="Django"></category><category term="Query"></category><category term="Sql"></category></entry></feed>

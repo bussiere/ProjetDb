@@ -1,0 +1,50 @@
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.0/dojo/dojo.xd.js"></script>
+    <script>
+    dojo.require("dojox.charting.Chart2D");
+    dojo.require("dojox.charting.axis2d.Default");
+    dojo.require("dojox.charting.plot2d.Default");
+    dojo.require("dojox.charting.plot2d.Spider");
+    dojo.require("dojox.charting.axis2d.Base");
+    dojo.require("dojox.charting.widget.Legend");
+        
+         dojo.ready(
+        		 
+        		 function(Chart, Default, Default, Spider, Base,Legend){
+             var chart1 = new dojox.charting.Chart("chart1");
+             chart1.addPlot("default", {
+             type:         "Spider",
+             labelOffset:      -10,
+             seriesFillAlpha:     0.2,
+             markerSize:       3,
+             precision:         0,
+             divisions:         11,
+             spiderType:          "polygon"
+         });
+         
+        var data= [ {"Jolie":0,"Stable":0,"Interessante":0},
+        {"Jolie":10,"Stable":10,"Interessante":10},
+        {"Jolie":7,"Stable":4,"Interessante":8} ];
+
+        chart1.addSeries("min", {data: data[0] }, { fill: "blue" });
+        chart1.addSeries("max", {data: data[1] }, { fill: "blue" });
+        chart1.addSeries("Ophelia", {data: data[2] }, { fill: "blue",text: "Ophelia" });
+        chart1.render();
+        chart1.removeSeries("min");
+        chart1.removeSeries("max");
+        var legendTwo = new Legend({chart: chart1}, "legendTwo");
+       
+        });
+    
+       
+    </script>
+</head>
+<body>
+    Ophelia :<br>
+    <div id="chart1" style="width: 600px; height: 600px;"> </div>
+    <div id="legendTwo"></div>
+
+    
+</body>
+</html>
