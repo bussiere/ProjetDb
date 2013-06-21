@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Conf GITS</title><link href="./" rel="alternate"></link><link href="http://bussiere.github.com/Documentation/feeds/hack.atom.xml" rel="self"></link><id>./</id><updated>2012-12-28T00:00:00+01:00</updated><entry><title>Logiciel de Securite</title><link href="./logiciel-de-securite.html" rel="alternate"></link><updated>2012-12-28T00:00:00+01:00</updated><author><name>Bussiere</name></author><id>tag:.,2012-12-28:logiciel-de-securite.html</id><summary type="html">&lt;p&gt;La matrice tel que representé dans gits :&lt;/p&gt;
+&lt;p&gt;&lt;a href="static/images/gitshack.jpg" title="Tachikoma"&gt;&lt;img alt="Vampirette" src="static/images/gitshack.jpg" /&gt;&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Le logiciel japonais de securite informatique daedalus :&lt;/p&gt;
+&lt;p&gt;&lt;a href="static/images/daedalus.jpg" title="dog"&gt;&lt;img alt="Dog" src="static/images/daedalus.jpg" /&gt;&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Video de presentation :&lt;/p&gt;
+&lt;p&gt;&lt;a href="static/images/daedalus.mp4" title="horse"&gt;&lt;img alt="Dog" src="static/images/daedalus.mp4" /&gt;&lt;/a&gt; &lt;/p&gt;</summary><category term="geek"></category><category term="hack"></category><category term="interface"></category><category term="gits"></category></entry></feed>

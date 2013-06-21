@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 AUTHOR = u'Bussiere'
-SITENAME = u'Documentation diverses'
-SITEURL = 'http://bussiere.github.com/Documentation'
+SITENAME = u'Conf GITS'
+SITEURL = '.'
 
 TIMEZONE = 'Europe/Paris'
 FEED_DOMAIN = 'http://bussiere.github.com/Documentation'
