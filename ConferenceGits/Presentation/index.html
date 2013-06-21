@@ -15,8 +15,7 @@
         <header id="banner" class="body">
                 <h1><a href="http://bussiere.github.com/Documentation/">Documentation diverses </a></h1>
                 <nav><ul>
-                                                                                    <li ><a href="http://bussiere.github.com/Documentation/category/blog.html">Blog</a></li>
-                                    <li ><a href="http://bussiere.github.com/Documentation/category/geek.html">Geek</a></li>
+                                                                                    <li ><a href="http://bussiere.github.com/Documentation/category/mecha.html">Mecha</a></li>
                                                 </ul></nav>
         </header><!-- /#banner -->
                 
@@ -24,102 +23,8 @@
 
                             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://bussiere.github.com/Documentation/wifi-et-ubuntu-unix.html">Wifi et Ubuntu / Unix</a></h1> 
+                    <h1 class="entry-title"><a href="http://bussiere.github.com/Documentation/mecha.html">Mecha</a></h1> 
                     <footer class="post-info">
-        <abbr class="published" title="2013-06-13T00:00:00">
-                Thu 13 June 2013
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="http://bussiere.github.com/Documentation/author/bussiere.html">Bussiere</a>
-        </address>
-        <p>In <a href="http://bussiere.github.com/Documentation/category/geek.html">Geek</a>. </p>
-<p>tags: <a href="http://bussiere.github.com/Documentation/tag/wifi.html">wifi</a><a href="http://bussiere.github.com/Documentation/tag/unix.html">unix</a><a href="http://bussiere.github.com/Documentation/tag/ubuntu.html">ubuntu</a><a href="http://bussiere.github.com/Documentation/tag/linuxscanscanning.html">linux;scan;scanning</a></p>
-</footer><!-- /.post-info --><p>Pour scanner les reseaux wifi aux alentours.</p>
-<div class="highlight"><pre><span class="n">iwlist</span> <span class="n">wlan0</span> <span class="n">scan</span>
-</pre></div>
-
-
-<p>ou encore :</p>
-<p>iwlist wlan0 scanning</p>                </article>
-                            </aside><!-- /#featured -->
-                            <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-                                                
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://bussiere.github.com/Documentation/git.html" rel="bookmark"
-                           title="Permalink to Git">Git</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-05-30T00:00:00">
-                Thu 30 May 2013
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="http://bussiere.github.com/Documentation/author/bussiere.html">Bussiere</a>
-        </address>
-        <p>In <a href="http://bussiere.github.com/Documentation/category/geek.html">Geek</a>. </p>
-<p>tags: <a href="http://bussiere.github.com/Documentation/tag/github.html">github</a><a href="http://bussiere.github.com/Documentation/tag/git.html">git</a></p>
-</footer><!-- /.post-info -->                <p>Quelques commandes utiles pour git :</p>
-<p>Pusher directement les pages :</p>
-<div class="highlight"><pre><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span><span class="o">:</span><span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
-</pre></div>
-                <a class="readmore" href="http://bussiere.github.com/Documentation/git.html">read more</a>
-                                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://bussiere.github.com/Documentation/zfs.html" rel="bookmark"
-                           title="Permalink to Zfs">Zfs</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2013-05-29T00:00:00">
-                Wed 29 May 2013
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="http://bussiere.github.com/Documentation/author/bussiere.html">Bussiere</a>
-        </address>
-        <p>In <a href="http://bussiere.github.com/Documentation/category/geek.html">Geek</a>. </p>
-<p>tags: <a href="http://bussiere.github.com/Documentation/tag/zfs.html">zfs</a><a href="http://bussiere.github.com/Documentation/tag/unix.html">unix</a><a href="http://bussiere.github.com/Documentation/tag/ubuntu.html">ubuntu</a><a href="http://bussiere.github.com/Documentation/tag/linux.html">linux</a></p>
-</footer><!-- /.post-info -->                <p>Quelques commandes utiles pour zfs :</p>
-<p>Revenir en arriere :</p>
-<div class="highlight"><pre><span class="n">zfs</span> <span class="n">rollback</span> <span class="n">tank</span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ahrens</span><span class="err">@</span><span class="n">tuesday</span>
-</pre></div>
-
-
-<p>Envoyer et recevoir une image :</p>
-<div class="highlight"><pre><span class="c"># zfs send tank/gozer@0830 &gt; /bkups/gozer.083006</span>
-<span class="c"># zfs receive tank/gozer2@today &lt; /bkups/gozer.083006</span>
-<span class="c"># zfs rename tank/gozer tank/gozer.old</span>
-<span class="c"># zfs rename tank/gozer2 tank/gozer</span>
-</pre></div>
-                <a class="readmore" href="http://bussiere.github.com/Documentation/zfs.html">read more</a>
-                                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://bussiere.github.com/Documentation/petite-puterie-en-java.html" rel="bookmark"
-                           title="Permalink to Petite Puterie en java">Petite Puterie en java</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
         <abbr class="published" title="2012-12-28T00:00:00">
                 Fri 28 December 2012
         </abbr>
@@ -127,75 +32,17 @@
                 <address class="vcard author">
                 By <a class="url fn" href="http://bussiere.github.com/Documentation/author/bussiere.html">Bussiere</a>
         </address>
-        <p>In <a href="http://bussiere.github.com/Documentation/category/geek.html">Geek</a>. </p>
+        <p>In <a href="http://bussiere.github.com/Documentation/category/mecha.html">Mecha</a>. </p>
 <p>tags: <a href="http://bussiere.github.com/Documentation/tag/geek.html">geek</a><a href="http://bussiere.github.com/Documentation/tag/java.html">java</a><a href="http://bussiere.github.com/Documentation/tag/prog.html">prog</a></p>
-</footer><!-- /.post-info -->                <p>Suite a ce <a href="http://sametmax.com/loperateur-not-bitwise-ou-tilde-en-javascript/" title="Tres bon blog">post</a> sur le site de <a href="http://sametmax.com" title="Tres bon site">sam et max</a>, j'ai eu l'idée d'une petite puterie en java.</p>
-<p>Je vous la livre :</p>
-<div class="highlight"><pre><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="o">~</span><span class="n">i</span><span class="p">))</span>
-<span class="p">{</span>
-    <span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></div>
-                <a class="readmore" href="http://bussiere.github.com/Documentation/petite-puterie-en-java.html">read more</a>
-                                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://bussiere.github.com/Documentation/les-query-en-django.html" rel="bookmark"
-                           title="Permalink to Les Query en django">Les Query en django</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-12-19T00:00:00">
-                Wed 19 December 2012
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="http://bussiere.github.com/Documentation/author/bussiere.html">Bussiere</a>
-        </address>
-        <p>In <a href="http://bussiere.github.com/Documentation/category/geek.html">Geek</a>. </p>
-<p>tags: <a href="http://bussiere.github.com/Documentation/tag/django.html">Django</a><a href="http://bussiere.github.com/Documentation/tag/query.html">Query</a><a href="http://bussiere.github.com/Documentation/tag/sql.html">Sql</a></p>
-</footer><!-- /.post-info -->                <p>Pour ceux qui ne sont pas au courant, Django c'est le bien.</p>
-<p>Sauf que je galere tout le temps avec les query, du coup cet article va me servir de pense bete a moi aussi et de tutorial pour vous.
-Je m'appui</p>
-<p>Donc :</p>
-<p>Recuperer tout les objets d ...</p>
-                <a class="readmore" href="http://bussiere.github.com/Documentation/les-query-en-django.html">read more</a>
-                                </div><!-- /.entry-content -->
-            </article></li>
-                            
-
-                 
-                        <li><article class="hentry">    
-                <header>
-                    <h1><a href="http://bussiere.github.com/Documentation/readme.html" rel="bookmark"
-                           title="Permalink to Readme">Readme</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-11-26T00:00:00">
-                Mon 26 November 2012
-        </abbr>
-
-                <address class="vcard author">
-                By <a class="url fn" href="http://bussiere.github.com/Documentation/author/bussiere.html">Bussiere</a>
-        </address>
-        <p>In <a href="http://bussiere.github.com/Documentation/category/blog.html">Blog</a>. </p>
-<p>tags: <a href="http://bussiere.github.com/Documentation/tag/documentation.html">Documentation</a><a href="http://bussiere.github.com/Documentation/tag/.html"></a></p>
-</footer><!-- /.post-info -->                <p>Ce site a pour vocation de regrouper des snippets de doc et trucs divers liés a l'informatique.
-Notamment toute les commandes que j'ai du mal a retenir.</p>
-                <a class="readmore" href="http://bussiere.github.com/Documentation/readme.html">read more</a>
-                                </div><!-- /.entry-content -->
-            </article></li>
-                            </ol><!-- /#posts-list -->
-                            <p class="paginator">
+</footer><!-- /.post-info --><p>Voila le tachikoma de base :</p>
+<p><a href="static/images/tachikoma.jpg" title="Tres bon blog"><img alt="Vampirette" src="static/images/tachikoma.jpg" /></a> </p>
+<p>Et voila les robots mis au point par le DARPA (Defense Advanced Research Projects Agency) :</p>
+<p><a href="static/images/dog.mp4" title="Tres bon blog"><img alt="Dog" src="static/images/dog.mp4" /></a> </p>                </article>
+                                    <p class="paginator">
         Page 1 / 1
     </p>
+                            </aside><!-- /#featured -->
+                                                </ol><!-- /#posts-list -->
                         </section><!-- /#content -->
                     <section id="extras" class="body">
                         <div class="blogroll">
