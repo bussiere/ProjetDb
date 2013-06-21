@@ -6,7 +6,7 @@ Tags: geek,AI,gits
 [0]: static/images/gitshack.jpg  "Tachikoma"
 [1]: static/images/daedalus.jpg "dog"
 [2]: static/images/AI.mp4 "horse"
-[1]: static/images/AI2.mp4 "dog"
+[3]: static/images/AI2.mp4 "dog"
 
 Le projet Blue Brain, littéralement « cerveau bleu », a pour objectif de créer un cerveau synthétique par processus de rétroingénierie. Fondé en mai 2005 à l'École polytechnique fédérale de Lausanne (EPFL) en Suisse, ce projet étudie l'architecture et les principes fonctionnels du cerveau.
 

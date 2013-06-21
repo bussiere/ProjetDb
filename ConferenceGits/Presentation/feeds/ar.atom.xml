@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Conf GITS</title><link href="./" rel="alternate"></link><link href="http://bussiere.github.com/Documentation/feeds/ar.atom.xml" rel="self"></link><id>./</id><updated>2012-12-28T00:00:00+01:00</updated><entry><title>AR</title><link href="./ar.html" rel="alternate"></link><updated>2012-12-28T00:00:00+01:00</updated><author><name>Bussiere</name></author><id>tag:.,2012-12-28:ar.html</id><summary type="html">&lt;p&gt;The Centre of Microsystems Technology (CMST), Imec's associated laboratory at Ghent University (Belgium),&lt;/p&gt;
+&lt;p&gt;Read more at: http://phys.org/news/2012-12-breakthrough-augmented-reality-contact-lens.html#&lt;/p&gt;
+&lt;p&gt;&lt;a href="static/images/argits.jpg" title="ar gits"&gt;&lt;img alt="Vampirette" src="static/images/argits.jpg" /&gt;&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href="static/images/glass2.jpg" title="lentille"&gt;&lt;img alt="Vampirette" src="static/images/glass2.jpg" /&gt;&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Video de presentation :&lt;/p&gt;
+&lt;p&gt;&lt;a href="static/images/glass2.mp4" title="lentille"&gt;&lt;img alt="lentille" src="static/images/glass2.mp4" /&gt;&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href="static/images/glass.mp4" title="google"&gt;&lt;img alt="google" src="static/images/glass.mp4" /&gt;&lt;/a&gt; &lt;/p&gt;</summary><category term="geek"></category><category term="AR"></category><category term="gits"></category></entry></feed>
